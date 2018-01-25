@@ -3,6 +3,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat','Open sans', Arial, Helvetica, sans-serif;
+    align-content: center;
+    justify-content: center;
 }
 
 a {
@@ -23,4 +25,56 @@ a {
 
 .hide {
     display: none;
+}
+
+/* CONTAINER CSS PROPERTIES */
+
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto 10vh;
+}
+
+/* INDEX BASE CSS */
+
+header,
+main,
+footer {
+    grid-column: span 1;
+    grid-row: span 1;
+    grid-template-columns: inherit;
+    grid-template-rows: 1fr;
+    display: grid;
+}
+
+header {
+    background-image: url("../img/gym_weights_header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    min-height: 90vh;
+}
+
+/* FOOTER BASE CSS GRID PROPERTIES */
+
+footer {
+    background: linear-gradient(#222222, #000 50%);
+}
+
+.footerContent {
+    grid-template-columns: inherit;
+    grid-template-rows: inherit;
+}
+
+.footerInfo {
+    align-content: center;
+    justify-content: center;
+}
+
+.footerCopyright {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #fff;
 }
