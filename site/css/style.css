@@ -1,87 +1,82 @@
+/* STANDARD CSS PROPERTIES */
+
 body {
-    background-color: springgreen;
+    margin: 0;
+    font-family: 'Montserrat','Open sans', Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width:400px) {
+a {
+    background-color: transparent;
+    transition: all .5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
 
-    /* STANDARD CSS PROPERTIES */
+._1span {
+    grid-column: span 1;
+    grid-row: span 1;
+}
 
-    body {
-        margin: 0;
-        font-family: 'Montserrat','Open sans', Arial, Helvetica, sans-serif;
-        background-color: #fff;
-    }
+.grid {
+    display: grid;
+}
 
-    a {
-        background-color: transparent;
-        transition: all .5s ease;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-    }
+.hide {
+    display: none;
+}
 
-    ._1span {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
+/* CONTAINER CSS PROPERTIES */
 
-    .grid {
-        display: grid;
-    }
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh auto 10vh;
+}
 
-    .hide {
-        display: none;
-    }
+/* INDEX BASE CSS */
 
-    /* CONTAINER CSS PROPERTIES */
+header,
+main,
+footer {
+    grid-column: span 1;
+    grid-row: span 1;
+    grid-template-columns: inherit;
+    grid-template-rows: 1fr;
+    display: grid;
+}
 
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto 10vh;
-    }
+/* HEADER BASE CSS GRID PROPERTIES */
 
-    /* INDEX BASE CSS */
+header {
+    background-image: url("../img/start_background_gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    header,
-    main,
-    footer {
-        grid-column: span 1;
-        grid-row: span 1;
-        grid-template-columns: inherit;
-        grid-template-rows: 1fr;
-        display: grid;
-    }
+/* MAIN BASE CSS GRID PROPERTIES */
 
-    header {
-        background-image: url("../img/start_background_gradient.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+main {
+    min-height: 90vh;
+}
 
-    main {
-        min-height: 90vh;
-    }
+/* FOOTER BASE CSS GRID PROPERTIES */
 
-    /* FOOTER BASE CSS GRID PROPERTIES */
+footer {
+    background: linear-gradient(#222222, #000 50%);
+}
 
-    footer {
-        background: linear-gradient(#222222, #000 50%);
-    }
+.footerContent {
+    grid-template-columns: inherit;
+    grid-template-rows: inherit;
+}
 
-    .footerContent {
-        grid-template-columns: inherit;
-        grid-template-rows: inherit;
-    }
+.footerInfo {
+    align-content: center;
+    justify-content: center;
+}
 
-    .footerInfo {
-        align-content: center;
-        justify-content: center;
-    }
-
-    .footerCopyright {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        color: #fff;
-    }
-
+.footerCopyright {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #fff;
 }
