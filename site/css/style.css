@@ -65,9 +65,9 @@ header {
     grid-row: 1 / 2;
 }
 
-.headerContentBox {
+/*.headerContentBox {
     display: none;
-}
+}*/
 
 .headerLogo {
     grid-column: 1 / 4;
@@ -103,9 +103,9 @@ i.fa-chevron-up {
     cursor: pointer;
 }
 
-.headerDropdownContent {
+/*.headerDropdownContent {
     display: grid;
-}
+}*/
 
 .headerDropdownLogo {
     grid-column: 1 / 2;
@@ -276,6 +276,41 @@ i.fa-chevron-up {
 
 main {
     min-height: 90vh;
+}
+
+.mainContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.mainContentBox {
+    grid-template-columns: inherit;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.mainContentNewsBox {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.mainContentNewsBoxContent {
+    grid-column: 2 / 6;
+    grid-row: 2 / 8;
+    background-color: hotpink;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.indexNewsBoxImage {
+    grid-column: span 1;
+    grid-row: 1 / 4;
+    background-color: aqua;
+}
+
+.indexNewsBoxParagraph {
+    grid-column: span 1;
+    grid-row: 4 / 7;
+    background-color: forestgreen;
 }
 
 /* FOOTER BASE CSS GRID PROPERTIES */
