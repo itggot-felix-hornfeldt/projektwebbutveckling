@@ -438,24 +438,30 @@ i.fa-chevron-up {
 .siteContactMainContent {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 105vh;
+    height: 127vh;
 }
 
 .siteContactMainContentBox {
-    background-color: aqua;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    /*grid-row-gap: 1vh;*/
 }
 
 .siteContactInfoBox {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    background-color: yellow;
 }
 
 .siteContactInfoImageBox {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    align-content: center;
+    justify-content: center;
+}
+
+.siteContactInfoImage {
+    border-radius: 25%;
+    margin-left: 1vw;
 }
 
 .siteContactInfoInfoBox {
@@ -463,6 +469,27 @@ i.fa-chevron-up {
     grid-row: 1 / 2;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+}
+
+.siteContactInfoNameBox,
+.siteContactInfoPhoneNumberBox,
+.siteContactInfoProfessionBox {
+    align-content: center;
+}
+
+.siteContactInfoParagraph {
+    margin: 0;
+    margin-left: 3vw;
+}
+
+#contactdietist,
+#contactmassagetherapist,
+#contactpersonaltrainerone,
+#contactpersonaltrainertwo,
+#contactphysiotherapistone,
+#contactphysiotherapisttwo,
+#contactphysiotherapistthree {
+    border-top: 2px solid #707070;
 }
 
 /*************************************************************************************************************/
