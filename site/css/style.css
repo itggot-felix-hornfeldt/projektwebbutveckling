@@ -382,8 +382,7 @@ i.fa-chevron-up {
 .siteHeaderLogoBox {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    /*align-content: center;
-    background-color: #ffff00;*/ 
+    /*background-color: #ffff00;*/
 }
 
 .siteHeaderDropdownIconBox {
@@ -393,8 +392,15 @@ i.fa-chevron-up {
     justify-content: center;
 }
 
-.siteHeaderPageHeadlineBox {
+.siteHeaderPageHeadlineBoxSmall {
     grid-column: 1 / 3;
+    grid-row: 4 / 6;
+    align-content: center;
+    justify-content: center;
+}
+
+.siteHeaderPageHeadlineBoxLarge {
+    grid-column: 1 / 4;
     grid-row: 4 / 6;
     align-content: center;
     justify-content: center;
@@ -409,15 +415,18 @@ i.fa-chevron-up {
 
 .siteMainContent {
     min-height: 65vh;
-    background-image: url("../../rehabcenter/img/menu.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /*************************************************************************************************************/
 
 /***************BOOK.html CSS***********/
 
+.siteBookMainContent {
+    background-image: url("../../rehabcenter/img/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
 /*************************************************************************************************************/
 
 /***************FIND.html CSS***********/
@@ -425,6 +434,36 @@ i.fa-chevron-up {
 /*************************************************************************************************************/
 
 /***************CONTACT.html CSS***********/
+
+.siteContactMainContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 105vh;
+}
+
+.siteContactMainContentBox {
+    background-color: aqua;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.siteContactInfoBox {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background-color: yellow;
+}
+
+.siteContactInfoImageBox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.siteContactInfoInfoBox {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
 
 /*************************************************************************************************************/
 
