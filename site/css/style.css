@@ -323,7 +323,7 @@ i.fa-chevron-up {
 .mainContentNewsBoxContent {
     grid-column: 2 / 6;
     grid-row: 2 / 8;
-    background-color: hotpink;
+    /*background-color: hotpink;*/
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
 }
@@ -331,13 +331,29 @@ i.fa-chevron-up {
 .indexNewsBoxImage {
     grid-column: span 1;
     grid-row: 1 / 4;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
-.indexNewsBoxParagraph {
+.indexNewsBoxInfo {
     grid-column: span 1;
     grid-row: 4 / 7;
-    background-color: forestgreen;
+    /*background-color: forestgreen;*/
+}
+
+.indexNewsHeadline {
+    margin: 0;
+    /*color: #000;*/
+    font-size: 14px;
+}
+
+.indexNewsHeadline a {
+    color: #000;
+}
+
+.indexNewsParagraph {
+    margin: 0;
+    color: #707070;
+    font-size: 10px;
 }
 
 /*************************************************************************************************************/
