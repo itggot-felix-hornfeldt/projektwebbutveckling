@@ -431,6 +431,41 @@ i.fa-chevron-up {
 
 /***************FIND.html CSS***********/
 
+.siteFindMainContent {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.siteFindMainContentBox {
+    grid-template-columns: inherit;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.siteFindMainImageMapsBox {
+    grid-column: span 1;
+    grid-row: 1 / 4;
+    /*background-color: pink;*/
+}
+
+.siteFindMainInfoBox {
+    grid-column: span 1;
+    grid-row: 4 / 5;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.siteFindMainInfoInfoBox {
+    align-content: center;
+    justify-content: center;
+}
+
+.siteFindMainInfo {
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+    /*margin-left: 3vw;*/
+}
+
 /*************************************************************************************************************/
 
 /***************CONTACT.html CSS***********/
