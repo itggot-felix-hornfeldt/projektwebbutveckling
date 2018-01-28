@@ -445,6 +445,24 @@ i.fa-chevron-up {
     grid-column: span 1;
     grid-row: 1 / 4;
     /*background-color: pink;*/
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.siteFIndMainImagesMapsContentBox {
+    grid-column: 2 / 10;
+    grid-row: 2 / 10;
+    /*background-color: #f5f5f5;*/
+    background-color: #fff;
+    border: 15px double #000;
+    border-radius: 25%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.siteFindMainImageMaps {
+    grid-column: 2 / 8;
+    grid-row: 2 / 8;
 }
 
 .siteFindMainInfoBox {
