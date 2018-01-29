@@ -32,7 +32,7 @@
                                 <img src="../img/site_header_logo_125_66.png" alt="" title="" class="siteHeaderLogo">
                             </div>
                             <div class="siteHeaderDropdownIconBox grid">
-                                <a onclick="">
+                                <a onclick="showSiteDropdown()">
                                     <i class="fa fa-bars"></i>
                                 </a>
                             </div>
@@ -68,6 +68,67 @@
                         </div>
                     </div>
                 </footer>
+            </div>
+            <div class="siteDropdownContainer hide">
+                <div class="siteDropdownContainerContentBox grid _1span">
+                    <div class="siteDropdownContentLogoBox grid">
+                        <a onclick="removeSiteDropdown()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="siteDropdownContentBox grid">
+                        <div class="dropdownSearchInput grid _1span">
+                            <input type="text" class="dropdownSearchBar" placeholder="Sök här...">
+                        </div>
+                        <div class="dropdownMenu grid">
+                            <div class="dropdownMenuContent grid _1span">
+                                <div class="dropdownMenuHeadlineBox grid _1span">
+                                    <h2 class="dropdownMenuHeadline">MENY</h2>
+                                </div>
+                                <div class="dropdownMenuParagraphBox grid _1span" id="dropdownMenuBookBox">
+                                    <a href="book.html"><p class="dropdownMenuParagraph">Boka</p></a>
+                                </div>
+                                <div class="dropdownMenuParagraphBox grid _1span" id="dropdownMenuFindBox">
+                                    <a href="find.html"><p class="dropdownMenuParagraph">Hitta</p></a>
+                                </div>
+                                <div class="dropdownMenuParagraphBox grid _1span" id="dropdownMenuContactBox">
+                                    <a href="contact.html"><p class="dropdownMenuParagraph">Kontakta</p></a>
+                                </div>
+                                <div class="dropdownMenuParagraphBox grid _1span" id="dropdownMenuNewsBox">
+                                    <a href="news.html"><p class="dropdownMenuParagraph">Nyheter</p></a>
+                                </div>
+                                <div class="dropdownMenuParagraphBox grid _1span" id="dropdownMenuAboutkBox">
+                                    <a href="about.html"><p class="dropdownMenuParagraph">Om oss</p></a>
+                                </div>
+                                <div class="dropdownMenuParagraphBox grid _1span" id="dropdownMenuHelpBox">
+                                    <a href="help.html"><p class="dropdownMenuParagraph">Hjälp</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdownForm grid">
+                            <div class="dropdownFormContent grid _1span">
+                                <div class="dropdownFormHeadlineBox grid">
+                                    <h2 class="dropdownFormHeadline">INLOGGNING</h2>
+                                </div>
+                                <div class="dropdownFormRegisterBox grid">
+                                    <button class="formRegisterButton">Bli medlem</button>
+                                </div>
+                                <div class="dropdownFormUsernameBox grid">
+                                    <label for="">Glömt lösenord?</label>
+                                    <input type="text" class="dropdownFormUsernameInput" placeholder="användarnamn">
+                                </div>
+                                <div class="dropdownFormPasswordAndLoginBox grid">
+                                    <div class="dropdownFormPasswordBox grid">
+                                        <input type="password" class="dropdownFormPasswordInput" placeholder="lösenord">
+                                    </div>
+                                    <div class="dropdownFormLoginBox grid">
+                                        <button class="formLoginButton">Logga in</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </body>
     </html>

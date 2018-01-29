@@ -11,3 +11,13 @@ function removeDropdown() {
     document.querySelector('footer').style.display = "grid";
     document.querySelector('.headerDropdownContent').style.display = "none";
 }
+
+function showSiteDropdown() {
+    document.querySelector('.siteDropdownContainer').style.display = "grid";
+    document.querySelector('.siteContainer').style.display = "none";
+}
+
+function removeSiteDropdown() {
+    document.querySelector('.siteDropdownContainer').style.display = "none";
+    document.querySelector('.siteContainer').style.display = "grid";
+}
