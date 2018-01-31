@@ -476,6 +476,9 @@ i.fa-chevron-up {
 .siteFindMainContent {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    background-image: url("../../rehabcenter/img/menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .siteFindMainContentBox {
