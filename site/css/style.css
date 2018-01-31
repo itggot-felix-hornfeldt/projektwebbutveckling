@@ -380,8 +380,8 @@ i.fa-chevron-up {
 }
 
 .siteHeaderLogoBox {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
     /*background-color: #ffff00;*/
 }
 
@@ -401,6 +401,13 @@ i.fa-chevron-up {
 
 .siteHeaderPageHeadlineBoxLarge {
     grid-column: 1 / 4;
+    grid-row: 4 / 6;
+    align-content: center;
+    justify-content: center;
+}
+
+.siteHeaderPageHeadlineBoxXLarge {
+    grid-column: 1 / 5;
     grid-row: 4 / 6;
     align-content: center;
     justify-content: center;
