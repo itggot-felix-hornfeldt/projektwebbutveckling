@@ -370,9 +370,9 @@ i.fa-chevron-up {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     /*background-color: springgreen;*/
-    /*background-image: url("../img/site_header_background_image_375_166_gradient_two.png");
+    background-image: url("../img/site_header_background_image_375_166_gradient_two.png");
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 .siteHeaderContentBox {
