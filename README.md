@@ -7,6 +7,7 @@ Colors;
 
 #C2FF2C
 #5894FF
+#CC2A0F
 #707070
 #fff
 #000
