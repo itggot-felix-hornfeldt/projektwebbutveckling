@@ -376,9 +376,9 @@ i.fa-chevron-up {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     /*background-color: springgreen;*/
-    background-image: url("../img/site_header_background_image_375_166_gradient_two.png");
+    /* background-image: url("../img/site_header_background_image_375_166_gradient_two.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .siteHeaderContentBox {
@@ -475,10 +475,32 @@ i.fa-chevron-up {
 
 /***************BOOK.html CSS***********/
 
-.siteBookMainContent {
-    /*background-image: url("../../rehabcenter/img/menu.jpg");
+.siteBookHeaderContent {
+    background-image: url("../img/site_header_background_image_375_166_gradient_two.png");
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
+}
+
+.siteBookMainContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.siteBookMainContentBox {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.siteBookMainChoiceNavBar {
+    grid-column: span 1;
+    grid-row: 1 / 2;
+    background-color: aqua;
+}
+
+.siteBookMainContentChoiceBox {
+    grid-column: span 1;
+    grid-row: 2 / 16;
+    background-color: saddlebrown;
 }
  
 /*************************************************************************************************************/
@@ -640,11 +662,28 @@ i.fa-chevron-up {
 
 /***************NEWS.html CSS***********/
 
+.siteNewsHeaderContent {
+    background-image: url("../img/news_header_background_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*************************************************************************************************************/
 
 /***************ABOUT.html CSS***********/
+
+.siteAboutHeaderContent {
+    background-image: url("../img/about_header_background_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*************************************************************************************************************/
 
 /***************HELP.html CSS***********/
 
+.siteOpenHeaderContent {
+    background-image: url("../img/open_header_background_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
