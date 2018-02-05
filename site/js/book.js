@@ -32,12 +32,12 @@ function choiceThisWeek() {
     document.querySelector('.siteBookSecondArrowRight').style.display = "grid";
 }
 
-function choiceNextWeek() {
-    document.querySelector('#siteBookParagraphThirdChoice').innerHTML = "Nästa vecka";
-    document.querySelector('.siteBookChoiceBoxWeek').style.display = "none";
-    document.querySelector('.siteBookChoiceBoxTimes').style.display = "grid";
-    document.querySelector('.siteBookSecondArrowRight').style.display = "grid";
-}
+// function choiceNextWeek() {
+//     document.querySelector('#siteBookParagraphThirdChoice').innerHTML = "Nästa vecka";
+//     document.querySelector('.siteBookChoiceBoxWeek').style.display = "none";
+//     document.querySelector('.siteBookChoiceBoxTimes').style.display = "grid";
+//     document.querySelector('.siteBookSecondArrowRight').style.display = "grid";
+// }
 
 function choiceTime() {
     document.querySelector('#siteBookParagraphForthChoice').innerHTML = "tis 17:30";
