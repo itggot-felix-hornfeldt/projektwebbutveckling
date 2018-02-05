@@ -48,33 +48,68 @@
                         <div class="siteBookMainContentBox grid _1span">
                             <div class="siteBookMainChoiceBar grid">
                                 <div class="siteBookFirstChoice grid">
-                                    <p class="siteBookParagraphChoice" id="siteBookParagraphFirstChoice">Gruppträning</p>
+                                    <p class="siteBookParagraphChoice" id="siteBookParagraphFirstChoice"></p>
                                 </div>
                                 <div class="siteBookArrowRight siteBookFirstArrowRight grid">
                                     <i class="fa fa-chevron-right"></i>
                                 </div>
                                 <div class="siteBookSecondChoice grid">
-                                    <p class="siteBookParagraphChoice">Kondition</p>
+                                    <p class="siteBookParagraphChoice" id="siteBookParagraphSecondChoice"></p>
                                 </div>
                                 <div class="siteBookArrowRight siteBookSecondArrowRight grid">
                                     <i class="fa fa-chevron-right"></i>
                                 </div>
                                 <div class="siteBookThirdChoice grid">
-                                    <p class="siteBookParagraphChoice">Nästa vecka</p>
+                                    <p class="siteBookParagraphChoice" id="siteBookParagraphThirdChoice"></p>
                                 </div>
                                 <div class="siteBookArrowRight siteBookThirdArrowRight grid">
                                     <i class="fa fa-chevron-right"></i>
                                 </div>
                                 <div class="siteBookForthChoice grid">
-                                    <p class="siteBookParagraphChoice">mån 12:00</p>
+                                    <p class="siteBookParagraphChoice" id="siteBookParagraphForthChoice"></p>
                                 </div>
                             </div>
                             <div class="siteBookMainContentChoiceBox grid">
-                                <div class="grid"></div>
-                                <div class="grid"></div>
-                                <div class="grid"></div>
-                                <div class="grid"></div>
-                                <div class="grid"></div>
+                                <div class="siteBookChoiceBoxTraining grid">
+                                    <div class="siteBookGroupChoiceBox grid _1span">
+                                        <a onclick="choiceGroup()">
+                                            <button class="siteBookTrainingChoiceButton">Gruppträning</button>
+                                        </a>
+                                    </div>
+                                    <div class="siteBookPersonalChoiceBox grid _1span">
+                                        <a onclick="">
+                                            <button disabled="disabled" id="disabled" class="siteBookTrainingChoiceButton">Personlig träning</button>
+                                        </a>
+                                    </div>
+                                    <div class="siteBookRehabChoiceBox grid _1span">
+                                        <a onclick="">
+                                            <button disabled="disabled" id="disabled" class="siteBookTrainingChoiceButton">Sjukgymnastik</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="siteBookChoiceBoxType hide">
+                                    <div class="siteBookHeadlineChoiceTypeBox grid _1span">
+                                        <h2 class="siteBookHeadlineChoice">Vad för typ av träning?</h2>
+                                    </div>
+                                    <div class="grid _1span">
+                                        <a onclick="choiceTypeCardio()">
+                                            <button class="siteBookTrainingChoiceButton">Kondition</button>
+                                        </a>
+                                    </div>
+                                    <div class="grid _1span">
+                                        <a onclick="">
+                                            <button class="siteBookTrainingChoiceButton">Styrka</button>
+                                        </a>
+                                    </div>
+                                    <div class="grid _1span">
+                                        <a onclick="">
+                                            <button class="siteBookTrainingChoiceButton">Yoga</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="siteBookChoiceBoxWeek grid"></div>
+                                <div class="siteBookChoiceBoxTimes grid"></div>
+                                <div class="siteBookChoiceBoxConformation grid"></div>
                             </div>
                         </div>
                     </div>

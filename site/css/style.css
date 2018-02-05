@@ -570,11 +570,71 @@ i.fa-chevron-up {
 .siteBookMainContentChoiceBox {
     grid-column: span 1;
     grid-row: 2 / 16;
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
- 
+
+#disabled {
+    background-color: lightgrey;
+}
+
+.siteBookChoiceBoxTraining {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.siteBookGroupChoiceBox,
+.siteBookPersonalChoiceBox,
+.siteBookRehabChoiceBox {
+    align-content: center;
+    justify-content: center;
+}
+
+.siteBookTrainingChoiceButton {
+    background-color: #5894FF;
+    color: #fff;
+    padding: 15px;
+    width: 250px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 31px;
+}
+
+.siteBookChoiceBoxType {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.siteBookChoiceBoxType div {
+    align-content: center;
+    justify-content: center;
+}
+
+.siteBookHeadlineChoice {
+    color: #fff;
+    margin: 0;
+}
+
+.siteBookChoiceBoxWeek {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.siteBookChoiceBoxTimes {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.siteBookChoiceBoxConformation {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
 /*************************************************************************************************************/
 
 /***************FIND.html CSS***********/
