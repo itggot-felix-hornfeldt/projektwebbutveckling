@@ -516,21 +516,21 @@ i.fa-chevron-up {
 
 .siteBookSecondChoice {
     /* background-color: gold; */
-    grid-column: 7 / 11;
+    grid-column: 7 / 10;
     grid-row: 1 / 2;
     align-content: center;
     justify-content: center;
 }
 
 .siteBookSecondArrowRight {
-    grid-column: 11 / 12;
+    grid-column: 10 / 11;
     grid-row: 1 / 2;
     /* background-color: beige; */
 }
 
 .siteBookThirdChoice {
     /* background-color: fuchsia; */
-    grid-column: 12 / 16;
+    grid-column: 11 / 16;
     grid-row: 1 / 2;
     align-content: center;
     justify-content: center;
@@ -623,11 +623,129 @@ i.fa-chevron-up {
 .siteBookChoiceBoxWeek {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.siteBookChoiceBoxWeek div {
+    align-content: center;
+    justify-content: center;
 }
 
 .siteBookChoiceBoxTimes {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.siteBookHeadlineChoiceTimesBox {
+    align-content: center;
+    justify-content: center;
+}
+
+.siteBookTableTimesBox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 9;
+    /* background-color: #C2FF2C; */
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+}
+
+.siteBookTableTimesContentBox {
+    grid-column: 2 / 18;
+    grid-row: 2 / 14;
+    /* background-color: #000; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.siteBookTableTimesFirstRowBox,
+.siteBookTableTimesSecondRowBox,
+.siteBookTableTimesThirdRowBox,
+.siteBookTableTimesForthRowBox {
+    border-bottom: 1px solid #707070;
+}
+
+.siteBookTableTimesFirstRowBox,
+.siteBookTableTimesSecondRowBox,
+.siteBookTableTimesThirdRowBox,
+.siteBookTableTimesForthRowBox,
+.siteBookTableTimesFifthRowBox {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column: 1 / 5;
+}
+
+.siteBookTableTimesFirstRowBox {
+    grid-row: 1 / 2;
+}
+
+.siteBookTableTimesSecondRowBox {
+    grid-row: 2 / 3;
+}
+
+.siteBookTableTimesThirdRowBox {
+    grid-row: 3 / 4;
+}
+
+.siteBookTableTimesForthRowBox {
+    grid-row: 4 / 5;
+}
+
+.siteBookTableTimesFifthRowBox {
+    grid-row: 5 / 6;
+}
+
+.siteBookTableTimesFirstColumnBox,
+.siteBookTableTimesSecondColumnBox {
+    border-right: 1px solid #707070;
+}
+
+.siteBookTableTimesFirstColumnBox {
+    align-content: center;
+}
+
+.siteBookTableTimesSecondColumnBox,
+.siteBookTableTimesThirdColumnBox,
+.siteBookTableTimesAvailabilityBox,
+.siteBookTableTimesButtonBox {
+    align-content: center;
+    justify-content: center;
+}
+
+.siteBookTableTimesFirstColumnBox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.siteBookTableTimesSecondColumnBox {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.siteBookTableTimesThirdColumnBox {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.siteBookTableTimesButton {
+    border-radius: 18px;
+    width: 89px;
+    padding: 5px;
+    border: 0;
+    background-color: #5894FF;
+    color: #fff;
+    font-size: 22px;
+}
+
+.siteBookTableTimesParagraph {
+    margin: 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .siteBookChoiceBoxConformation {
@@ -812,7 +930,7 @@ i.fa-chevron-up {
 
 /*************************************************************************************************************/
 
-/***************HELP.html CSS***********/
+/***************OPEN.html CSS***********/
 
 .siteOpenHeaderContent {
     background-image: url("../img/open_header_background_image.png");

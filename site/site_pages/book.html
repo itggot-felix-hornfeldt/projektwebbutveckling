@@ -50,19 +50,19 @@
                                 <div class="siteBookFirstChoice grid">
                                     <p class="siteBookParagraphChoice" id="siteBookParagraphFirstChoice"></p>
                                 </div>
-                                <div class="siteBookArrowRight siteBookFirstArrowRight grid">
+                                <div class="siteBookArrowRight siteBookFirstArrowRight hide">
                                     <i class="fa fa-chevron-right"></i>
                                 </div>
                                 <div class="siteBookSecondChoice grid">
                                     <p class="siteBookParagraphChoice" id="siteBookParagraphSecondChoice"></p>
                                 </div>
-                                <div class="siteBookArrowRight siteBookSecondArrowRight grid">
+                                <div class="siteBookArrowRight siteBookSecondArrowRight hide">
                                     <i class="fa fa-chevron-right"></i>
                                 </div>
                                 <div class="siteBookThirdChoice grid">
                                     <p class="siteBookParagraphChoice" id="siteBookParagraphThirdChoice"></p>
                                 </div>
-                                <div class="siteBookArrowRight siteBookThirdArrowRight grid">
+                                <div class="siteBookArrowRight siteBookThirdArrowRight hide">
                                     <i class="fa fa-chevron-right"></i>
                                 </div>
                                 <div class="siteBookForthChoice grid">
@@ -72,18 +72,18 @@
                             <div class="siteBookMainContentChoiceBox grid">
                                 <div class="siteBookChoiceBoxTraining grid">
                                     <div class="siteBookGroupChoiceBox grid _1span">
-                                        <a onclick="choiceGroup()">
+                                        <a onclick="choiceTrainingGroup()">
                                             <button class="siteBookTrainingChoiceButton">Gruppträning</button>
                                         </a>
                                     </div>
                                     <div class="siteBookPersonalChoiceBox grid _1span">
-                                        <a onclick="">
-                                            <button disabled="disabled" id="disabled" class="siteBookTrainingChoiceButton">Personlig träning</button>
+                                        <a>
+                                            <button id="disabled" class="siteBookTrainingChoiceButton">Personlig träning</button>
                                         </a>
                                     </div>
                                     <div class="siteBookRehabChoiceBox grid _1span">
-                                        <a onclick="">
-                                            <button disabled="disabled" id="disabled" class="siteBookTrainingChoiceButton">Sjukgymnastik</button>
+                                        <a>
+                                            <button id="disabled" class="siteBookTrainingChoiceButton">Sjukgymnastik</button>
                                         </a>
                                     </div>
                                 </div>
@@ -97,18 +97,131 @@
                                         </a>
                                     </div>
                                     <div class="grid _1span">
-                                        <a onclick="">
+                                        <a onclick="choiceTypeStrength()">
                                             <button class="siteBookTrainingChoiceButton">Styrka</button>
                                         </a>
                                     </div>
                                     <div class="grid _1span">
-                                        <a onclick="">
+                                        <a onclick="choiceTypeYoga()">
                                             <button class="siteBookTrainingChoiceButton">Yoga</button>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="siteBookChoiceBoxWeek grid"></div>
-                                <div class="siteBookChoiceBoxTimes grid"></div>
+                                <div class="siteBookChoiceBoxWeek hide">
+                                    <div class="siteBookHeadlineChoiceWeekBox grid _1span">
+                                        <h2 class="siteBookHeadlineChoice">När vill du boka?</h2>
+                                    </div>
+                                    <div class="grid _1span">
+                                        <a onclick="choiceThisWeek()">
+                                            <button class="siteBookTrainingChoiceButton">Denna veckan</button>
+                                        </a>
+                                    </div>
+                                    <div class="grid _1span">
+                                        <a onclick="choiceNextWeek()">
+                                            <button class="siteBookTrainingChoiceButton">Nästa vecka</button>
+                                        </a>
+                                    </div>
+                                    <!-- <div class="grid _1span"></div> -->
+                                </div>
+                                <div class="siteBookChoiceBoxTimes hide">
+                                    <div class="siteBookHeadlineChoiceTimesBox grid _1span">
+                                        <h2 class="siteBookHeadlineChoice">Matchande pass</h2>
+                                    </div>
+                                    <div class="siteBookTableTimesBox grid">
+                                        <div class="siteBookTableTimesContentBox grid">
+                                            <div class="siteBookTableTimesFirstRowBox grid">
+                                                <div class="siteBookTableTimesFirstColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">mån</p>
+                                                </div>
+                                                <div class="siteBookTableTimesSecondColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">12:30</p>
+                                                </div>
+                                                <div class="siteBookTableTimesThirdColumnBox grid">
+                                                    <div class="siteBookTableTimesAvailabilityBox grid">
+                                                        <p class="siteBookTableTimesParagraph">0</p>
+                                                    </div>
+                                                    <div class="siteBookTableTimesButtonBox grid">
+                                                        <a>
+                                                            <button id="disabled" class="siteBookTableTimesButton">Boka</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="siteBookTableTimesSecondRowBox grid">
+                                                <div class="siteBookTableTimesFirstColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">tis</p>
+                                                </div>
+                                                <div class="siteBookTableTimesSecondColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">17:30</p>
+                                                </div>
+                                                <div class="siteBookTableTimesThirdColumnBox grid">
+                                                    <div class="siteBookTableTimesAvailabilityBox grid">
+                                                        <p class="siteBookTableTimesParagraph">2</p>
+                                                    </div>
+                                                    <div class="siteBookTableTimesButtonBox grid">
+                                                        <a onclick="choiceTime()">
+                                                            <button class="siteBookTableTimesButton">Boka</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="siteBookTableTimesThirdRowBox grid">
+                                                <div class="siteBookTableTimesFirstColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">ons</p>
+                                                </div>
+                                                <div class="siteBookTableTimesSecondColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">09:30</p>
+                                                </div>
+                                                <div class="siteBookTableTimesThirdColumnBox grid">
+                                                    <div class="siteBookTableTimesAvailabilityBox grid">
+                                                        <p class="siteBookTableTimesParagraph">0</p>
+                                                    </div>
+                                                    <div class="siteBookTableTimesButtonBox grid">
+                                                        <a>
+                                                            <button id="disabled" class="siteBookTableTimesButton">Boka</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="siteBookTableTimesForthRowBox grid">
+                                                <div class="siteBookTableTimesFirstColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">tors</p>
+                                                </div>
+                                                <div class="siteBookTableTimesSecondColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">10:30</p>
+                                                </div>
+                                                <div class="siteBookTableTimesThirdColumnBox grid">
+                                                    <div class="siteBookTableTimesAvailabilityBox grid">
+                                                        <p class="siteBookTableTimesParagraph">0</p>
+                                                    </div>
+                                                    <div class="siteBookTableTimesButtonBox grid">
+                                                        <a>
+                                                            <button id="disabled" class="siteBookTableTimesButton">Boka</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="siteBookTableTimesFifthRowBox grid">
+                                                <div class="siteBookTableTimesFirstColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">fre</p>
+                                                </div>
+                                                <div class="siteBookTableTimesSecondColumnBox grid">
+                                                    <p class="siteBookTableTimesParagraph">19:30</p>
+                                                </div>
+                                                <div class="siteBookTableTimesThirdColumnBox grid">
+                                                    <div class="siteBookTableTimesAvailabilityBox grid">
+                                                        <p class="siteBookTableTimesParagraph">0</p>
+                                                    </div>
+                                                    <div class="siteBookTableTimesButtonBox grid">
+                                                        <a>
+                                                            <button id="disabled" class="siteBookTableTimesButton">Boka</button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="siteBookChoiceBoxConformation grid"></div>
                             </div>
                         </div>
