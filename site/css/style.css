@@ -863,7 +863,35 @@ i.fa-chevron-up {
 .siteBookChoiceBoxDone {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    background-color: crimson;
+    /* background-color: crimson; */
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.siteBookDoneParagraphBox {
+    grid-column: 1 / 2;;
+    grid-row: 4 / 5;
+    align-content: center;
+    justify-content: center;
+}
+
+.siteBookDoneParagraph {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.siteBookDoneGoBackBox {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    align-content: center;
+    justify-content: center;
+}
+
+.siteBookDoneGoBackBox a {
+    font-size: 20px;
+    color: #5894FF;
 }
 
 /*************************************************************************************************************/
