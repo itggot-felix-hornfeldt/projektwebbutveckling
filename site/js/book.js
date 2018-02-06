@@ -65,7 +65,8 @@ function conformationInfo() {
 }
 
 function conformationYes() {
-    
+    document.querySelector('.siteBookChoiceBoxConformation').style.display = "none";
+    document.querySelector('.siteBookChoiceBoxDone').style.display = "grid";
 }
 
 function conformationNo() {
