@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                             <div class="siteBookMainContentChoiceBox grid">
-                                <div class="siteBookChoiceBoxTraining grid">
+                                <div class="siteBookChoiceBoxTraining hide">
                                     <div class="siteBookGroupChoiceBox grid _1span">
                                         <a onclick="choiceTrainingGroup()">
                                             <button class="siteBookTrainingChoiceButton">Gruppträning</button>
@@ -92,8 +92,8 @@
                                         <h2 class="siteBookHeadlineChoice">Vad för typ av träning?</h2>
                                     </div>
                                     <div class="grid _1span">
-                                        <a onclick="choiceTypeCardio()">
-                                            <button class="siteBookTrainingChoiceButton">Kondition</button>
+                                        <!-- <a onclick="choiceTypeCardio()"> --><a>
+                                            <button id="disabled" class="siteBookTrainingChoiceButton">Kondition</button>
                                         </a>
                                     </div>
                                     <div class="grid _1span">
@@ -222,7 +222,38 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="siteBookChoiceBoxConformation grid"></div>
+                                <div class="siteBookChoiceBoxConformation hide">
+                                    <div class="siteBookConformationInfoBox grid">
+                                        <div class="siteBookConformationInfoHeadlineBox grid">
+                                            <h2 class="siteBookConformationInfoHeadline">Du är påväg att boka:</h2>
+                                        </div>
+                                        <div class="siteBookConformationInfoParagraphBox grid">
+                                            <p class="siteBookConformationInfoParagraph">
+                                                <a id="firstConformation" class="siteBookConformationBlue"></a> <a id="secondConformation" class="siteBookConformationBlue"></a><br>
+                                                <a id="thirdConformation"></a> <a id="forthConformation" class="siteBookConformationBlue"></a><br>
+                                                kl <a id="fifthConformation" class="siteBookConformationBlue"></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="siteBookConformationBox grid">
+                                        <div class="siteBookConformationHeadlineBox grid">
+                                            <h2 class="siteBookConformationHeadline">Vill du fortsätta?</h2>
+                                        </div>
+                                        <div class="siteBookConformationButtonsBox grid">
+                                            <div class="siteBookConformationYesBox grid">
+                                                <a onclick="conformationYes()">
+                                                    <button class="siteBookConformationYesButton">Ja</button>
+                                                </a>
+                                            </div>
+                                            <div class="siteBookConformationNoBox grid">
+                                                <a onclick="conformationNo()">
+                                                    <button class="siteBookConformationNoButton">Nej</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="siteBookChoiceBoxDone grid"></div>
                             </div>
                         </div>
                     </div>
