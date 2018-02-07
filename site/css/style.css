@@ -1059,6 +1059,32 @@ i.fa-chevron-up {
     background-size: cover;
 }
 
+.siteNewsMainContent {
+    height: 165vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75vh 90vh;
+}
+
+.siteNewsFirstContentBox {
+    /* background-color: #CC2A0F; */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.siteNewsContentAreaBox {
+    background-color: #fff;
+    grid-column: 2 / 8;
+    grid-row: 2 / 10;
+}
+
+.siteNewsSecondContentBox {
+    background-color: #C2FF2C;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
 /*************************************************************************************************************/
 
 /***************ABOUT.html CSS***********/
