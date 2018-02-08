@@ -1135,6 +1135,10 @@ i.fa-chevron-up {
     font-size: 18px;
 }
 
+.siteNewsSecondInfoHeadline {
+    font-size: 22px;
+}
+
 .siteNewsFirstInfoParagraphBox,
 .siteNewsSecondInfoParagraphBox {
     grid-column: 2 / 10;
