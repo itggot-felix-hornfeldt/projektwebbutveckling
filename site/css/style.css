@@ -1066,23 +1066,90 @@ i.fa-chevron-up {
 }
 
 .siteNewsFirstContentBox {
-    /* background-color: #CC2A0F; */
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+}
+
+.siteNewsSecondContentBox {
+    /* background-color: #C2FF2C; */
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.siteNewsFirstContentBox, 
+.siteNewsSecondContentBox {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr);
 }
 
-.siteNewsContentAreaBox {
+.siteNewsFirstContentAreaBox,
+.siteNewsSecondContentAreaBox {
     background-color: #fff;
     grid-column: 2 / 8;
     grid-row: 2 / 10;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.siteNewsSecondContentBox {
-    background-color: #C2FF2C;
+.siteNewsFirstImageBox,
+.siteNewsSecondImageBox {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
+    /* background-color: #CC2A0F; */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.siteNewsFirstImage,
+.siteNewsSecondImage {
+    grid-column: 2 / 10;
+    grid-row: 2 / 10;
+}
+
+.siteNewsFirstInfoBox,
+.siteNewsSecondInfoBox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    /* background-color: #5894FF; */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.siteNewsFirstInfoHeadlineBox,
+.siteNewsSecondInfoHeadlineBox {
+    grid-column: 2 / 10;
+    grid-row: 1 / 4;
+    /* background-color: chocolate; */
+    align-content: center;
+    justify-content: center;
+}
+
+.siteNewsFirstInfoHeadline,
+.siteNewsSecondInfoHeadline {
+    color: #000;
+    margin: 0;
+    font-weight: 700;
+}
+
+.siteNewsFirstInfoHeadline {
+    font-size: 18px;
+}
+
+.siteNewsFirstInfoParagraphBox,
+.siteNewsSecondInfoParagraphBox {
+    grid-column: 2 / 10;
+    grid-row: 4 / 10;
+    /* background-color: #C2FF2C; */
+    align-content: center;
+    justify-content: center;
+}
+
+.siteNewsFirstInfoParagraph,
+.siteNewsSecondInfoParagraph {
+    margin: 0;
+    color: #707070;
+    font-size: 12px;
+    font-style: italic;
 }
 
 /*************************************************************************************************************/
