@@ -43,6 +43,7 @@ function choiceNextWeek() {
     document.querySelector('#siteBookParagraphThirdChoice').innerHTML = "Nästa vecka";
     document.querySelector('.siteBookChoiceBoxWeek').style.display = "none";
     document.querySelector('.siteBookChoiceBoxTimes').style.display = "grid";
+    // document.querySelector('.siteBookChoiceBoxTimes').className = "siteBookChoiceBoxTimes grid"
     document.querySelector('.siteBookSecondArrowRight').style.display = "grid";
     bookInfoArr.push('nästa');
 }
