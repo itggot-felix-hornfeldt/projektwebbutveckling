@@ -1190,3 +1190,38 @@ i.fa-chevron-up {
     align-content: center;
     justify-content: center;
 }
+
+.siteOpenMainContactBox,
+.siteOpenMainOpenTimesBox {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.siteOpenMainContactHeadlineBox,
+.siteOpenMainOpenTimesHeadlineBox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-content: center;
+    justify-content: center;
+}
+
+.siteOpenMainContactHeadline,
+.siteOpenMainOpenTimesHeadline {
+    margin: 0;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.siteOpenMainContactInfoBox,
+.siteOpenMainOpenTimesContentBox {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    align-content: center;
+    justify-content: center;
+}
+
+.siteOpenMainContactInfo,
+.siteOpenMainOpenTimesContent {
+    margin: 0;
+    color: #fff;
+}
