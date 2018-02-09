@@ -1175,3 +1175,18 @@ i.fa-chevron-up {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.siteOpenMainContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.siteOpenMainContentBox {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.siteOpenMainImageBox {
+    align-content: center;
+    justify-content: center;
+}
