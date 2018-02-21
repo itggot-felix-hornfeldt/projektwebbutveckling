@@ -1166,6 +1166,34 @@ i.fa-chevron-up {
     background-size: cover;
 }
 
+.siteAboutMainContent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.siteAboutMainContentBox {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.siteAboutMainImageBox {
+    grid-column: span 1;
+    grid-row: 1 / 2;
+    /* background-color: #C2FF2C; */
+    align-content: center;
+    justify-content: center;
+}
+
+.siteAboutMainImage {
+    opacity: 0.5;
+}
+
+.siteAboutMainInfoBox {
+    grid-column: span 1;
+    grid-row: 2 / 4;
+    background-color: #fff;
+}
+
 /*************************************************************************************************************/
 
 /***************OPEN.html CSS***********/
