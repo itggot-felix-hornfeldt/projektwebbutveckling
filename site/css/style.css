@@ -920,31 +920,10 @@ i.fa-chevron-up {
 .siteFindMainImageMapsBox {
     grid-column: span 1;
     grid-row: 1 / 4;
-    /* background-color: pink;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr); */
     background-image: url("../img/stenpiren_map_view.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* .siteFIndMainImagesMapsContentBox {
-    grid-column: 2 / 10;
-    grid-row: 2 / 10;
-    background-color: #f5f5f5;
-    background-image: url("../img/find_main_image_large.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 5px solid #000;
-    border-radius: 25%;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-} */
-
-/* .siteFindMainImageMaps {
-    grid-column: 2 / 8;
-    grid-row: 2 / 8;
-} */
 
 .siteFindMainInfoBox {
     grid-column: span 1;
@@ -958,10 +937,15 @@ i.fa-chevron-up {
     justify-content: center;
 }
 
+.siteFindMainInfoAdress {
+    color: #5894FF;
+    margin: 0;
+}
+
 .siteFindMainInfo {
     margin: 0;
     color: #fff;
-    font-size: 18px;
+    /* font-size: 18px; */
     /*margin-left: 3vw;*/
 }
 
