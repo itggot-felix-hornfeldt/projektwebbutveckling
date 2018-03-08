@@ -2,7 +2,7 @@
 
 _**Welcome to the best rehab center in Sweden!**
 Check out our brand new website for more information._
-
+* Note! This is only adapted for a Iphone 6, 7 and 8
 Colors;
 
 #C2FF2C - light green
