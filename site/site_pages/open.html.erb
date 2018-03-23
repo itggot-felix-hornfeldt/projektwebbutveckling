@@ -7,9 +7,10 @@
             <!--CSS Stylesheets-->
             <link rel="stylesheet" href="../css/style.css" />
             
-            <!--scale and charset-->
+            <!--scale and charset + format detection-->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+            <meta name="format-detection" content="telephone=no">
             
             <!--Title of page-->
             <title>Rehab Center</title>
@@ -26,44 +27,55 @@
         <body>
             <div class="siteContainer grid">
                 <header>
-                    <div class="siteHeaderContent siteFindHeaderContent grid _1span">
-                        <div class="siteHeaderContentBox grid _1span">
+                    <div class="siteHeaderContent siteOpenHeaderContent grid _1span">
+                        <div class="siteHeaderContentBox grid">
                             <div class="siteHeaderLogoBox grid">
-                                <a href="../../index.html"><img src="../img/site_header_logo_125_66.png" alt="Rehab Center Logo" title="Rehab Center Home" class="siteHeaderLogo"></a>
+                                <a href="../index.html"><img src="../img/site_header_logo_125_66.png" alt="Rehab Center Logo" title="Rehab Center Home" class="siteHeaderLogo"></a>
                             </div>
                             <div class="siteHeaderDropdownIconBox grid">
                                 <a onclick="showSiteDropdown()">
                                     <i class="fa fa-bars"></i>
                                 </a>
                             </div>
-                            <div class="siteHeaderPageHeadlineBoxSmall grid">
-                                <h1 class="siteHeaderPageHeadline">Hitta</h1>
+                            <div class="siteHeaderPageHeadlineBoxXLarge grid">
+                                <h1 class="siteHeaderPageHeadline">Öppettider</h1>
                             </div>
                         </div>
                     </div>
                 </header>
                 <main>
-                    <div class="siteMainContent siteFindMainContent grid _1span">
-                        <div class="siteFindMainContentBox grid _1span">
-                            <div class="siteFindMainImageMapsBox grid"></div>
-                            <div class="siteFindMainInfoBox grid">
-                                <div class="siteFindMainInfoInfoBox grid _1span">
-                                    <h2 class="siteFindMainInfoAdress">Träningsvägen 42</h2>
+                    <div class="siteMainContent siteOpenMainContent grid _1span">
+                        <div class="siteOpenMainContentBox grid _1span">
+                            <div class="siteOpenMainImageBox grid _1span">
+                                <img src="../img/open_times_contact.png" alt="" class="siteOpenMainImage">
+                            </div>
+                            <div class="siteOpenMainContactBox grid _1span">
+                                <div class="siteOpenMainContactHeadlineBox grid">
+                                    <h2 class="siteOpenMainContactHeadline">Kontakt</h2>
                                 </div>
-                                <div class="siteFindMainInfoInfoBox grid _1span">
-                                    <h2 class="siteFindMainInfo">457 11 - Göteborg</h2>
+                                <div class="siteOpenMainContactInfoBox grid">
+                                    <p class="siteOpenMainContactInfo">
+                                        Adress: Träningsvägen 42, 457 11 - Göteborg<br>
+                                        Telefon: 073-5989997
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="siteOpenMainOpenTimesBox grid _1span">
+                                <div class="siteOpenMainOpenTimesHeadlineBox grid">
+                                    <h2 class="siteOpenMainOpenTimesHeadline">Öppettider</h2>
+                                </div>
+                                <div class="siteOpenMainOpenTimesContentBox grid">
+                                    <p class="siteOpenMainOpenTimesContent">
+                                        Mån - Tors: 08.00 - 19.00<br>
+                                        Fre: 10.00 - 20.00<br>
+                                        Lör - Sön: Stängt
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </main>
-                <footer>
-                    <div class="footerContent grid _1span">
-                        <div class="footerInfo grid _1span">
-                            <p class="footerCopyright">&copy; 2018 Felix Hörnfeldt</p>
-                        </div>
-                    </div>
-                </footer>
+                <%= render('./footer.html.erb') %>
             </div>
             <div class="siteDropdownContainer hide">
                 <div class="siteDropdownContainerContentBox grid _1span">

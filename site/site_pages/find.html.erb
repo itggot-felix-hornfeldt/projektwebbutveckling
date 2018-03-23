@@ -26,55 +26,38 @@
         <body>
             <div class="siteContainer grid">
                 <header>
-                    <div class="siteHeaderContent siteAboutHeaderContent grid _1span">
-                        <div class="siteHeaderContentBox grid">
+                    <div class="siteHeaderContent siteFindHeaderContent grid _1span">
+                        <div class="siteHeaderContentBox grid _1span">
                             <div class="siteHeaderLogoBox grid">
-                                <a href="../../index.html"><img src="../img/site_header_logo_125_66.png" alt="Rehab Center Logo" title="Rehab Center Home" class="siteHeaderLogo"></a>
+                                <a href="../index.html"><img src="../img/site_header_logo_125_66.png" alt="Rehab Center Logo" title="Rehab Center Home" class="siteHeaderLogo"></a>
                             </div>
                             <div class="siteHeaderDropdownIconBox grid">
                                 <a onclick="showSiteDropdown()">
                                     <i class="fa fa-bars"></i>
                                 </a>
                             </div>
-                            <div class="siteHeaderPageHeadlineBoxLarge grid">
-                                <h1 class="siteHeaderPageHeadline">Om oss</h1>
+                            <div class="siteHeaderPageHeadlineBoxSmall grid">
+                                <h1 class="siteHeaderPageHeadline">Hitta</h1>
                             </div>
                         </div>
                     </div>
                 </header>
                 <main>
-                    <div class="siteMainContent siteAboutMainContent grid _1span">
-                        <div class="siteAboutMainContentBox grid _1span">
-                            <div class="siteAboutMainImageBox grid">
-                                <img src="../img/open_times_contact.png" alt="" class="siteAboutMainImage">
-                            </div>
-                            <div class="siteAboutMainInfoBox grid">
-                                <div class="siteAboutMainInfoContentBox grid">
-                                    <div class="siteAboutInfoHeadlineBox grid">
-                                        <h2 class="siteAboutInfoHeadline">Detta är vi:</h2>
-                                    </div>
-                                    <div class="siteAboutInfoContentBox grid">
-                                        <p class="siteAboutInfoContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                            Incidunt earum, odio deleniti nulla illum esse repellendus distinctio modi rerum 
-                                            debitis nam aperiam non doloremque laudantium laboriosam similique enim, 
-                                            asperiores vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Expedita ab, modi beatae repudiandae voluptatum deserunt, eum laborum alias 
-                                            earum temporibus rerum. Beatae sapiente consequatur praesentium ex, libero 
-                                            non neque blanditiis.
-                                        </p>
-                                    </div>
+                    <div class="siteMainContent siteFindMainContent grid _1span">
+                        <div class="siteFindMainContentBox grid _1span">
+                            <div class="siteFindMainImageMapsBox grid"></div>
+                            <div class="siteFindMainInfoBox grid">
+                                <div class="siteFindMainInfoInfoBox grid _1span">
+                                    <h2 class="siteFindMainInfoAdress">Träningsvägen 42</h2>
+                                </div>
+                                <div class="siteFindMainInfoInfoBox grid _1span">
+                                    <h2 class="siteFindMainInfo">457 11 - Göteborg</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </main>
-                <footer>
-                    <div class="footerContent grid _1span">
-                        <div class="footerInfo grid _1span">
-                            <p class="footerCopyright">&copy; 2018 Felix Hörnfeldt</p>
-                        </div>
-                    </div>
-                </footer>
+                <%= render('./footer.html.erb') %>
             </div>
             <div class="siteDropdownContainer hide">
                 <div class="siteDropdownContainerContentBox grid _1span">
