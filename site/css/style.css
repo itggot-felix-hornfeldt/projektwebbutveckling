@@ -247,6 +247,10 @@ footer {
 .indexContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 667.2px auto auto;
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 667.2px;
+    overflow: auto;
 }
 
 /* HEADER BASE CSS GRID PROPERTIES */
@@ -390,7 +394,8 @@ i.fa-chevron-up {
     grid-template-rows: 166.8px auto auto;
     max-width: 375px;
     min-width: 375px;
-    /* max-height: 667px; */
+    max-height: 667.2px;
+    overflow: auto;
 }
 
 .siteHeaderContent {
