@@ -466,15 +466,12 @@ i.fa-chevron-up {
 .siteDropdownContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 667.2px;
-    /* background-image: url("../img/start_background_gradient.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
     background-image: url("../img/menu.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 375px;
     min-width: 375px;
-    max-height: 667px;
+    max-height: 667.2px;
 }
 
 .siteDropdownContainerContentBox {
@@ -1305,4 +1302,37 @@ i.fa-chevron-up {
 .siteOpenMainOpenTimesContent {
     margin: 0;
     color: #fff;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: lime;
+    }
+
+    .siteDropdownContainerIndex {
+        grid-template-columns: 1fr;
+        grid-template-rows: 667.2px;
+        background-image: url("../img/menu.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 375px;
+        min-width: 375px;
+        max-height: 667.2px;
+    }
+
+    .siteDropdownContainer,
+    .siteDropdownContainerIndex {
+        display: grid;
+        position: absolute;
+        right: 222.5px;
+        top: 46px;
+        min-height: 667.2px;
+        border-left: 2px solid #707070;
+    }
+    .siteDropdownContentLogoBox,
+    .siteHeaderDropdownIconBox,
+    .headerDropdown,
+    .headerDropdownContent {
+        display: none;
+    }
 }
